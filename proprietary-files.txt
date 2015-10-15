@@ -110,6 +110,7 @@ lib/libaudiodcrflt.so
 lib/libMali.so
 lib/libssladp.so
 lib/libm4u.so
+lib/libfmjni.so
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/libWVStreamControlAPI_L3.so
 vendor/lib/libWVphoneAPI.so
