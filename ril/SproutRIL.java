@@ -38,12 +38,12 @@ public class SproutRIL extends RIL implements CommandsInterface {
 
 static final int RIL_REQUEST_SET_3G_CAPABILITY = 128;
 
-    public SproutRIL(Context context, int networkMode, int cdmaSubscription) {
-        super(context, networkMode, cdmaSubscription, null);
+    public SproutRIL(Context context, int networkModes, int cdmaSubscription) {
+        this(context, networkModes, cdmaSubscription, null);
     }
 
-    public SproutRIL(Context context, int networkMode, int cdmaSubscription, Integer instanceId) {
-        super(context, networkMode, cdmaSubscription, instanceId);
+    public SproutRIL(Context context, int preferredNetworkType, int cdmaSubscription, Integer instanceId) {
+        super(context, preferredNetworkType, cdmaSubscription, instanceId);
     }
 
     private static int readRilMessage(InputStream is, byte[] buffer)
