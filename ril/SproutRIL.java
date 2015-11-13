@@ -37,6 +37,7 @@ import com.android.internal.telephony.uicc.IccIoResult;
 public class SproutRIL extends RIL implements CommandsInterface {
 
 static final int RIL_REQUEST_SET_3G_CAPABILITY = 128;
+static final int RIL_REQUEST_DIAL_EMERGENCY = 10001;
 
     public SproutRIL(Context context, int networkModes, int cdmaSubscription) {
         this(context, networkModes, cdmaSubscription, null);
