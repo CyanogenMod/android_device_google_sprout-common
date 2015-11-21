@@ -33,3 +33,8 @@ allow init conn_launcher_exec:file execute;
 allow init mnld_exec:file execute;
 allow init mnld_socket:sock_file create;
 allow init mtk_agpsd_exec:file execute;
+allow init ccci_mdinit_exec:file { read open };
+allow init conn_launcher_exec:file { read open };
+allow init mnld_exec:file { read open };
+allow init mnld_socket:sock_file unlink;
+allow init mtk_agpsd_exec:file { read open };
