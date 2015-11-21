@@ -28,3 +28,8 @@ allow init mtk_agpsd_exec:file getattr;
 allow init nvram_daemon_exec:file getattr;
 allow init thermal_manager_exec:file getattr;
 allow init wmt_loader_exec:file getattr;
+allow init ccci_mdinit_exec:file execute;
+allow init conn_launcher_exec:file execute;
+allow init mnld_exec:file execute;
+allow init mnld_socket:sock_file create;
+allow init mtk_agpsd_exec:file execute;
