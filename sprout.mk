@@ -89,6 +89,10 @@ TARGET_SCREEN_WIDTH := 480
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/twrp.fstab:recovery/root/etc/twrp.fstab
 	
+# ART
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-swap=false
+
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.usb.default \
@@ -115,8 +119,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    camera.disable_zsl_mode=1 \
-    persist.sys.usb.config=mtp
+    camera.disable_zsl_mode=1
 	
 PRODUCT_PACKAGES += \
     librs_jni \

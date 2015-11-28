@@ -1,0 +1,4 @@
+allow vold protect_f_data_file:dir read;
+allow vold protect_s_data_file:dir read;
+allow vold protect_f_data_file:dir open;
+allow vold protect_s_data_file:dir open;
