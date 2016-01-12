@@ -118,6 +118,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
+    Snap
+
+PRODUCT_PACKAGES += \
     libsprout
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
