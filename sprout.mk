@@ -137,6 +137,10 @@ PRODUCT_PACKAGES += \
     setup_fs \
     e2fsck \
 
+# Gello
+PRODUCT_PACKAGES += \
+    Gello
+
 # Dynamically set props
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.name \
